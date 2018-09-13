@@ -99,8 +99,8 @@ class TicTacToe
   end
   
   #returns true if the game ended in a draw
-def draw?(board)
-  if full?(board) && !won?(board)
+def draw?
+  if full? && !won?
     true
   else
     false
