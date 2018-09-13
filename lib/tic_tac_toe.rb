@@ -133,8 +133,8 @@ end
       puts "Cat's Game!"
     else over?
       puts "Congratulations #{winner}!"
+    end
   end
-end
 
   
 end
