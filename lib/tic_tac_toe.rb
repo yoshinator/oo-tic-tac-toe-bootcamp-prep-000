@@ -108,8 +108,8 @@ def draw?(board)
 end
 
   #returns true if game is a draw or someone won
-  def over?(board)
-    if draw?(board) || won?(board)
+  def over?
+    if draw? || won?
       true
     else
       false
@@ -117,10 +117,10 @@ end
   end
   
   #returns an X or an O depending on which one won
-  def winner(board)
-    won?(board)
-    if won?(board)
-     board[won?(board)[0]]
+  def winner
+    won?
+    if won?
+     @board[won?[0]]
     end
   end
 
