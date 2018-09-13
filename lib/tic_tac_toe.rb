@@ -98,7 +98,32 @@ class TicTacToe
     end
   end
   
+  #returns true if the game ended in a draw
+def draw?(board)
+  if full?(board) && !won?(board)
+    true
+  else
+    false
+  end
+end
+
+  #returns true if game is a draw or someone won
+  def over?(board)
+    if draw?(board) || won?(board)
+      true
+    else
+      false
+    end
+  end
   
+  #returns an X or an O depending on which one won
+  def winner(board)
+    won?(board)
+    if won?(board)
+     board[won?(board)[0]]
+    end
+  end
+
   
 end
   
