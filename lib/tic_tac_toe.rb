@@ -124,7 +124,17 @@ end
     end
   end
   
-  
+  #play loop
+  def play(board)
+    while !over?(board)
+      turn(board)
+    end
+      if draw?(board)
+      puts "Cat's Game!"
+    else over?(board)
+      puts "Congratulations #{winner(board)}!"
+  end
+end
 
   
 end
