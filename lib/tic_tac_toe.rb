@@ -125,14 +125,14 @@ end
   end
   
   #play loop
-  def play(board)
-    while !over?(board)
-      turn(board)
+  def play
+    while !over?
+      turn
     end
-      if draw?(board)
+      if draw?
       puts "Cat's Game!"
-    else over?(board)
-      puts "Congratulations #{winner(board)}!"
+    else over?
+      puts "Congratulations #{winner}!"
   end
 end
 
